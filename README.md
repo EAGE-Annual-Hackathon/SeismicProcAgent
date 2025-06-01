@@ -171,7 +171,7 @@ The following examples (Chat Prompts) demonstrate the capabilities of SeismicPro
 ```
 "Please use the AI ​​method to process the data with inline = 400 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy and show the results."
 ```
-#### Advance ()
+#### Advance
 * ##### DeepProcess (sequential-thinking)
 > [!NOTE]
 > This function still under testing, need to enable the `sequential-thinking` tool, and consume more tokens. 
