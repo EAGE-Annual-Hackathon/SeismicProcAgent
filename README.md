@@ -151,28 +151,28 @@ After updating your configuration file, you need to restart Claude for Desktop. 
 ### Let’s have fun
 The following examples (Chat Prompts) demonstrate the capabilities of SeismicProcAgent:
 #### Primary
-##### Seismic Data Overview
+* ##### Seismic Data Overview
 ```
 "Show me the ebdic of the seismic data: /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
 ```
-##### Seismic Data Visualization
+* ##### Seismic Data Visualization
 ```
 "Please plot the image of inline 400 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
 ```
-##### Seismic Attributes
+* ##### Seismic Attributes
 ```
 "Please plot the envelope image of inline 400 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
 ```
-##### Seismic Data Denoising
+* ##### Seismic Data Denoising
 ```
 "Please run a SVD denoise on crossline 500 using a cut off of 0.3 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
 ```
-##### Seismic Data Denoising (AI)
+* ##### Seismic Data Denoising (AI)
 ```
 "Please use the AI ​​method to process the data with inline = 400 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy and show the results."
 ```
 #### Advance ()
-##### DeepProcess (sequential-thinking)
+* ##### DeepProcess (sequential-thinking)
 > [!NOTE]
 > This function still under testing, need to enable the `sequential-thinking` tool, and consume more tokens. 
 ```
