@@ -20,7 +20,7 @@ Then download and install [`Node.js`](https://nodejs.org/en/download/) according
 ### Installation
 ```
 # Clone the repository
-git clone https://github.com/JiahuaZhao/SeismicProcAgent.git
+git clone https://github.com/EAGE-Annual-Hackathon/SeismicProcAgent.git
 cd SeismicProcAgent
 
 # Install dependencies
