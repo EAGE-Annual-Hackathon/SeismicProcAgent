@@ -1,0 +1,55 @@
+{
+  "mcpServers": {
+      "sequential-thinking": {
+          "command": "npx",
+          "args": [
+              "-y",
+              "@modelcontextprotocol/server-sequential-thinking"
+          ]
+      },
+      "filesystem": {
+          "command": "npx",
+          "args": [
+              "-y",
+              "@modelcontextprotocol/server-filesystem",
+              "C:\\Your_Local_Path\\SeismicProcAgent"
+          ]
+      },
+      "seismic_basic_tools": {
+          "command": "uv",
+          "args": [
+              "--directory",
+              "C:\\Your_Local_Path\\SeismicProcAgent",
+              "run",
+              "basic_tools.py"
+          ]
+      },
+      "seismic_attributes": {
+          "command": "uv",
+          "args": [
+              "--directory",
+              "C:\\Your_Local_Path\\SeismicProcAgent",
+              "run",
+              "seismic_attributes.py"
+          ]
+      },
+      "seismic_denoising": {
+          "command": "uv",
+          "args": [
+              "--directory",
+              "C:\\Your_Local_Path\\SeismicProcAgent",
+              "run",
+              "denoising.py"
+          ]
+      },
+      "seismic_ai_tools": {
+          "command": "uv",
+          "args": [
+              "--directory",
+              "C:\\Your_Local_Path\\SeismicProcAgent",  
+              "run",
+              "ai_tools.py"
+          ]
+      }
+  }
+}
