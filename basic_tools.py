@@ -39,14 +39,14 @@ async def overview(data_path: str, data: str) -> str:
     return text_header
 
 @mcp.tool()
-async def frequency_spectrum_2d(data_path: str, data: str, line_number: int, line_type: str, iline: int = 189, crossline: int = 193) -> Image:
+async def frequency_spectrum_2d(data_path: str, data: str, line_number: int, line_type: str, inline: int = 189, crossline: int = 193) -> Image:
     """
     Calculate the frequency spectrum of a 2D seismic data.
 
     Args: 
         data_path: Path to the seismic record file
         data: Seismic record file, the suffix is usually .sgy or .segy
-        iline: Inline number, usually 181 or 189
+        inline: Inline number, usually 181 or 189
         crossline: Crossline number, usually 185 or 193
         line_number: Line number
         line_type: "inline" or "crossline"
@@ -54,10 +54,10 @@ async def frequency_spectrum_2d(data_path: str, data: str, line_number: int, lin
 
     filename = os.path.join(data_path, data)
 
-    with segyio.open(filename, mode='r', iline=iline, xline=crossline) as segyfile:
+    with segyio.open(filename, mode='r', inline=inline, xline=crossline) as segyfile:
         data = segyio.tools.cube(segyfile)
         twt = segyfile.samples + 1000
-        inlines = segyfile.ilines
+        inlines = segyfile.inlines
         crosslines = segyfile.xlines
 
     if line_type == "inline":
@@ -121,23 +121,23 @@ async def frequency_spectrum_2d(data_path: str, data: str, line_number: int, lin
     return Image(out_file)  
 
 @mcp.tool()
-async def frequency_spectrum_3d(data_path: str, data: str, iline: int = 189, crossline: int = 193) -> Image:
+async def frequency_spectrum_3d(data_path: str, data: str, inline: int = 189, crossline: int = 193) -> Image:
     """
     Calculate the frequency spectrum of a 3D seismic data.
 
     Args:
         data_path: Path to the seismic record file
         data: Seismic record file, the suffix is usually .sgy or .segy
-        iline: Inline number, usually 181 or 189
+        inline: Inline number, usually 181 or 189
         crossline: Crossline number, usually 185 or 193
     """
 
     filename = os.path.join(data_path, data)
 
-    with segyio.open(filename, mode='r', iline=iline, xline=crossline) as segyfile:
+    with segyio.open(filename, mode='r', inline=inline, xline=crossline) as segyfile:
         data = segyio.tools.cube(segyfile)
         twt = segyfile.samples + 1000
-        inlines = segyfile.ilines
+        inlines = segyfile.inlines
         crosslines = segyfile.xlines
 
     transp_cube = np.transpose(data)
