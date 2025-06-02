@@ -174,7 +174,7 @@ After updating your configuration file, you need to restart Claude for Desktop. 
 * #### Seismic attributes:
     * sliceAttribute:
         * Computing attribute of a 3D seismic cube, output a 2D attribute slice.
-        * Attribute classes: Amplitude, CompleTrace, DipAzm (dip and azimuth), EdgeDetection (edge detection). Each class has different attribute types. For more details, see `seismic_attributes.py`
+        * Attribute classes: Amplitude, CompleTrace, DipAzm (dip and azimuth), EdgeDetection (edge detection). Each class has different attribute types. For more details, see `seismic_attributes.py`.
 * #### Denoising:
     * median_denoise:
         * Denoises a matrix using median filter.
