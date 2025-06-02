@@ -147,7 +147,8 @@ Please refer to the configuration process shown in the MCP document: https://mod
 }
 ```
 > [!NOTE]
-> You can also refer to the `claude_ref/claude_desktop_config.json` configuration file (Windows). 
+> You can also refer to the `claude_ref/claude_desktop_config.json` configuration file (Windows).
+
 After updating your configuration file, you need to restart Claude for Desktop. Upon restarting, you should see a slider icon in the bottom left corner of the input box. After clicking on the slider icon, you should see the tools. At the same time, you can click on the tools to choose whether to use the tools (it is recommended to turn off `sequentialthinking` for the first time).
 
 ### Let’s have fun
