@@ -1,5 +1,5 @@
 # SeismicProcAgent
-The open source demo for seismic data process AI agent using MCP and LLMs.
+The open source demo for seismic data process AI agent using MCP and LLMs, built in the Hackathon hosted at the EAGE Annual 2025 in Toulouse, France.
 
 ## Quick Start
 ### Environment Requirements
