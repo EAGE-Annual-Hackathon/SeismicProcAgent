@@ -195,6 +195,8 @@ The following examples (Chat Prompts) demonstrate the capabilities of SeismicPro
 ```
 "Show me the ebdic of the seismic data: /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
 ```
+![image](https://github.com/EAGE-Annual-Hackathon/SeismicProcAgent/blob/main/images/1.gif)
+
 * ##### Seismic Data Visualization
 ```
 "Please plot the image of inline 400 for /Your_Local_Path/Dutch_Government_F3_entire_8bit_seismic.segy."
