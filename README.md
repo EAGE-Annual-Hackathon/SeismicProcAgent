@@ -185,6 +185,8 @@ After updating your configuration file, you need to restart Claude for Desktop. 
 * #### Denoising (AI):
     * SCRN_inference:
         * Swin Transformer for simultaneous denoising and interpolation of seismic data. (https://github.com/javashs/SCRN)
+* #### Processing report generation:
+    * LLMs, see [`Advance`](https://github.com/EAGE-Annual-Hackathon/SeismicProcAgent?tab=readme-ov-file#advance)
 
 ### Let’s have fun
 The following examples (Chat Prompts) demonstrate the capabilities of SeismicProcAgent:
