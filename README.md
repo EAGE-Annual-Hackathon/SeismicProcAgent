@@ -151,6 +151,41 @@ Please refer to the configuration process shown in the MCP document: https://mod
 
 After updating your configuration file, you need to restart Claude for Desktop. Upon restarting, you should see a slider icon in the bottom left corner of the input box. After clicking on the slider icon, you should see the tools. At the same time, you can click on the tools to choose whether to use the tools (it is recommended to turn off `sequentialthinking` for the first time).
 
+### Specific Functions
+* #### Overview:
+    * overview: 
+        * Overview of the seismic data (.sgy and .segy).
+* #### Data format conversion:
+    * segy2mdio:
+        * Convert a SEGY file to MDIO format.
+    * mdio2segy:
+        * Convert MDIO file to SEGY file.
+* #### Visualization:
+    * mdio_plot_inline:
+        * Read MDIO file and plot the inline.
+    * mdio_plot_crossline:
+        * Read MDIO file and plot the crossline.
+    * mdio_plot_time: 
+        * Read MDIO file and plot the crossline.
+    * frequency_spectrum_2d:
+        * Calculate the frequency spectrum of a 2D seismic data.
+    * frequency_spectrum_3d:
+        * Calculate the frequency spectrum of a 3D seismic data.
+* #### Seismic attributes:
+    * sliceAttribute:
+        * Computing attribute of a 3D seismic cube, output a 2D attribute slice.
+        * Attribute classes: Amplitude, CompleTrace, DipAzm (dip and azimuth), EdgeDetection (edge detection). Each class has different attribute types. For more details, see `seismic_attributes.py`:
+* #### Denoising:
+    * median_denoise:
+        * Denoises a matrix using median filter.
+    * gaussian_denoise:
+        * Denoises a matrix with Gaussian.
+    * denoise_svd_with_cutoff:
+        * Denoises a matrix using SVD with a cutoff threshold based on a percentage of the maximum singular value.
+* #### Denoising (AI):
+    * SCRN_inference:
+        * Swin Transformer for simultaneous denoising and interpolation of seismic data. (https://github.com/javashs/SCRN)
+
 ### Let’s have fun
 The following examples (Chat Prompts) demonstrate the capabilities of SeismicProcAgent:
 ### Primary
